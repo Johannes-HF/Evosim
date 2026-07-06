@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/jo/Documents/Personlig/26/evosim/build",
+  "command": "/usr/bin/c++  -I/home/jo/Documents/Personlig/26/evosim/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/evosim.dir/src/main.cpp.o -c /home/jo/Documents/Personlig/26/evosim/src/main.cpp",
+  "file": "/home/jo/Documents/Personlig/26/evosim/src/main.cpp",
+  "output": "CMakeFiles/evosim.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/jo/Documents/Personlig/26/evosim/build",
+  "command": "/usr/bin/cc  -I/home/jo/Documents/Personlig/26/evosim/include -Wall -Wextra -Wpedantic -o CMakeFiles/evosim.dir/src/glad.c.o -c /home/jo/Documents/Personlig/26/evosim/src/glad.c",
+  "file": "/home/jo/Documents/Personlig/26/evosim/src/glad.c",
+  "output": "CMakeFiles/evosim.dir/src/glad.c.o"
+},
+{
+  "directory": "/home/jo/Documents/Personlig/26/evosim/build",
+  "command": "/usr/bin/c++  -I/home/jo/Documents/Personlig/26/evosim/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/evosim.dir/src/matte.cpp.o -c /home/jo/Documents/Personlig/26/evosim/src/matte.cpp",
+  "file": "/home/jo/Documents/Personlig/26/evosim/src/matte.cpp",
+  "output": "CMakeFiles/evosim.dir/src/matte.cpp.o"
+},
+{
+  "directory": "/home/jo/Documents/Personlig/26/evosim/build",
+  "command": "/usr/bin/c++  -I/home/jo/Documents/Personlig/26/evosim/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/evosim.dir/src/GLfunksjoner.cpp.o -c /home/jo/Documents/Personlig/26/evosim/src/GLfunksjoner.cpp",
+  "file": "/home/jo/Documents/Personlig/26/evosim/src/GLfunksjoner.cpp",
+  "output": "CMakeFiles/evosim.dir/src/GLfunksjoner.cpp.o"
+}
+]
