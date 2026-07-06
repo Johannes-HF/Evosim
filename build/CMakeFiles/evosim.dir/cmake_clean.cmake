@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/evosim.dir/src/main.cpp.o.d"
   "CMakeFiles/evosim.dir/src/matte.cpp.o"
   "CMakeFiles/evosim.dir/src/matte.cpp.o.d"
+  "CMakeFiles/evosim.dir/src/organisme.cpp.o"
+  "CMakeFiles/evosim.dir/src/organisme.cpp.o.d"
   "evosim"
   "evosim.pdb"
 )

@@ -19,11 +19,16 @@ class Organisme{
 
 	public:
 		
-	Organisme();
+	Organisme(std::string conf = "");
 
-	std::string pGener() const;
+	std::vector<float> rEgenskaper() const;
+	void oppdaterEgenskaper(std::vector<float> nyeEgenskaper);
+	void tilfeldigEgenskaper();
+
+	int pGener() const;
 	std::string pVekter() const;
 	std::string pEgenskaper() const;
+	std::string pSensorer() const;
 
 	enum class Egenskaper {
 
@@ -36,11 +41,12 @@ class Organisme{
 		feromoner, //default 0, %vis økning for å tiltrekke partner. Øker og sjanse for å hisse på seg andre. 
 		luktesans, // default 0. %-vis sjanse for å detektere lukt, lukte lenger unna, mer presis retning        
 		reproduksjonstid, //default 1. lenger gir sterkere avkom, men er sårbar lenger
-		mot //default 1, hvor redd du blir i møte med andre
+		mot, //default 1, hvor redd du blir i møte med andre
 		
 		//Potensielle egenskaper:
 		// - størrelse -> påvirker kroppstetthet, akslerasjon etc
 		// hunter / prey eyes -> snevert og skarpt mot bredt og svakt.
+		COUNT //For å telle antall egenskaper
 	};
 
 	enum class Sensorer {
@@ -55,6 +61,7 @@ class Organisme{
 		smak,
 		frykt,
 		reting,
+		COUNT //For å få størrelsen 
 
 	};
 
@@ -77,7 +84,7 @@ class Organisme{
 		
 	};
 
-	~Organisme();
+	~Organisme(){};
 };
 
 inline const std::map<Organisme::Egenskaper, std::string> EgenskapMap = {
@@ -115,8 +122,8 @@ inline const std::map<Organisme::Handlinger, std::string> HandlingMap = {
 	{Organisme::Handlinger::rusle_O , "Gå Øst"}, 
 	{Organisme::Handlinger::rusle_S , "Gå Sør"}, 
 	{Organisme::Handlinger::rusle_V , "Gå Vest"}, 
-	{Organsime::Hadnlinger::roter_med , "Roter med klokka"},
-	{Organsime::Hadnlinger::roter_mot , "Roter mot klokka"},
+	{Organisme::Handlinger::roter_med , "Roter med klokka"},
+	{Organisme::Handlinger::roter_mot , "Roter mot klokka"},
 
 	{Organisme::Handlinger::flykt , "Flykte"},
 	{Organisme::Handlinger::fight , "Fighte"},
@@ -125,3 +132,8 @@ inline const std::map<Organisme::Handlinger, std::string> HandlingMap = {
 	{Organisme::Handlinger::drikk , "Drikke"},
 	{Organisme::Handlinger::pul , "Pule"}
 };
+
+
+// UTILS
+//
+int st(Organisme::Egenskaper);

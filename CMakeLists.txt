@@ -16,6 +16,7 @@ add_executable(evosim
 	src/glad.c
 	src/matte.cpp
 	src/GLfunksjoner.cpp
+	src/organisme.cpp
 )
 
 # OpenGL og GLAD pakker:

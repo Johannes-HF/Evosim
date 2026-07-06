@@ -22,5 +22,11 @@
   "command": "/usr/bin/c++  -I/home/jo/Documents/Personlig/26/evosim/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/evosim.dir/src/GLfunksjoner.cpp.o -c /home/jo/Documents/Personlig/26/evosim/src/GLfunksjoner.cpp",
   "file": "/home/jo/Documents/Personlig/26/evosim/src/GLfunksjoner.cpp",
   "output": "CMakeFiles/evosim.dir/src/GLfunksjoner.cpp.o"
+},
+{
+  "directory": "/home/jo/Documents/Personlig/26/evosim/build",
+  "command": "/usr/bin/c++  -I/home/jo/Documents/Personlig/26/evosim/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/evosim.dir/src/organisme.cpp.o -c /home/jo/Documents/Personlig/26/evosim/src/organisme.cpp",
+  "file": "/home/jo/Documents/Personlig/26/evosim/src/organisme.cpp",
+  "output": "CMakeFiles/evosim.dir/src/organisme.cpp.o"
 }
 ]

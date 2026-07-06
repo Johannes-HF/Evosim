@@ -4,6 +4,7 @@
 EvoSim er en evolusjonssimulator, som simulerer celler med en gitt genopype
 
 ---
+## Ambisjon og mål:
 
 ### Evolusjonsimulator med nevral nettverkshjerne
 

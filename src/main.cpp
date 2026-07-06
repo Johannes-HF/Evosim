@@ -32,7 +32,21 @@ int main(int argc, char* argv[])
 		if (args.at(1) == "--outline" || args.at(1) == "-l") { 
 			glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 		}
-	}
+	};
+
+	//Default organisme:
+
+	Organisme defaultCelle;
+
+	defaultCelle.oppdaterEgenskaper(defaultEgenskaper);
+
+	std::cout << defaultCelle.pEgenskaper() << std::endl;
+	
+	for (int i = 0; i < 10; i++){
+
+		Organisme randomOrg("random");
+		std::cout << randomOrg.pEgenskaper() << std::endl;
+	};
 
 	//RENDER LOOP
 	while(!glfwWindowShouldClose(window))
