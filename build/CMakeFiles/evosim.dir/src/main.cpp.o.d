@@ -193,13 +193,6 @@ CMakeFiles/evosim.dir/src/main.cpp.o: \
  /usr/include/c++/13/pstl/glue_numeric_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
  /home/jo/Documents/Personlig/26/evosim/include/GLfunksjoner.h \
- /home/jo/Documents/Personlig/26/evosim/include/settings.h \
- /home/jo/Documents/Personlig/26/evosim/include/shaderclass.h \
- /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/sstream \
- /usr/include/c++/13/bits/sstream.tcc \
  /home/jo/Documents/Personlig/26/evosim/include/organisme.h \
  /usr/include/c++/13/array /usr/include/c++/13/compare \
  /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
@@ -207,4 +200,11 @@ CMakeFiles/evosim.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h \
- /usr/include/c++/13/bits/erase_if.h
+ /usr/include/c++/13/bits/erase_if.h \
+ /home/jo/Documents/Personlig/26/evosim/include/settings.h \
+ /home/jo/Documents/Personlig/26/evosim/include/shaderclass.h \
+ /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
+ /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/sstream \
+ /usr/include/c++/13/bits/sstream.tcc
