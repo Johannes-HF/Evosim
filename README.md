@@ -1,7 +1,7 @@
 # README
 --- 
 
-EvoSim er en evolusjonssimulator, som simulerer celler med en gitt genopype
+EvoSim er en evolusjonssimulator, som simulerer celler med en gitt genotype
 
 ---
 ## Ambisjon og mål:
