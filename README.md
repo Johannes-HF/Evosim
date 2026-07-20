@@ -19,5 +19,7 @@ EvoSim er en evolusjonssimulator, som simulerer celler med en gitt genopype
   Shaderbasert computering av hjernen slik at alle celler oppdateres likt og bedre performance.
   
   hastighet, vekt, fordøyelse (plante vs kjøtt), tenner (skarpe eller flate), størrelse, syn, hjernekraft (energi pr nevron som avfyres), reproduseringsstyrke?, Antall gener, alle er muterbare elementer
-  
+
+### KI-bruk
+Siden dette er for læringens del, unngår jeg KI så mye som mulig. Hvis jeg er helt stuck, kan jeg bruke det til feilsøking. 
 
