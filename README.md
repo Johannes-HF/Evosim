@@ -8,9 +8,9 @@ EvoSim er en evolusjonssimulator, som simulerer celler med en gitt genotype
 
 ### Evolusjonsimulator med nevral nettverkshjerne
 
-- Inspirert av video av david miller? på youtube
+- Inspirert av video av David Miller på youtube
   
-  Hver celle skal ha en rekke input og output noder, med noen mellomnoder. Genene bestemmer hvilke noder som er koblet sammen og vekingen. 
+  Hver celle skal ha en rekke input og output noder, med noen mellomnoder. Genene bestemmer hvilke noder som er koblet sammen og vektingen. 
   
   Ikke generasjonsbasert, men "live"
   
