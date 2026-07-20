@@ -20,13 +20,16 @@ Organisme::Organisme( std::string conf ){
 	if (conf == ""){
 		std::cout << "Type TOM" << std::endl;
 	}
-	this->posisjon = {randomFloat(0, PETRI_BREDDE), randomFloat(0, PETRI_HOYDE)};
+	this->posisjon = {randomFloat(-1, 1), randomFloat(-1, 1)};
 };
 
 std::vector<float> Organisme::rEgenskaper() const {
 
+
 	return this->egenskaper;
 }
+
+std::array<float, 2> Organisme::getPos() const {return this->posisjon;}
 
 void Organisme::tilfeldigEgenskaper(){
 	using e = Organisme::Egenskaper;
@@ -48,6 +51,7 @@ void Organisme::tilfeldigEgenskaper(){
 		if (e < 0) e = 0;
 	}
 	this->egenskaper = nyeEgenskaper;
+	this->genotype = randomHex(nyeEgenskaper.at(st(e::genAntall))); 
 }
 
 void Organisme::oppdaterEgenskaper(std::vector<float> nyeEgenskaper) {
@@ -55,9 +59,11 @@ void Organisme::oppdaterEgenskaper(std::vector<float> nyeEgenskaper) {
 	this->egenskaper = nyeEgenskaper;
 	std::cout <<"Egenskapene er opprettet"<< std::endl;
 
-}
+};
 
-int Organisme::pGener() const {return this->genotype;};
+std::string Organisme::pGener() const {return this->genotype;};
+
+
 std::string Organisme::pVekter() const {
 
 	std::stringstream vektStrom;	
@@ -106,3 +112,5 @@ std::string Organisme::pSensorer() const {
 int st(Organisme::Egenskaper egenskap){
 	return static_cast<int>(egenskap);
 }
+
+

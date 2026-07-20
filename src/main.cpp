@@ -25,6 +25,7 @@ int main(int argc, char* argv[])
 //----- SHADERE
 	
 	Shader shaderKlasse("shaders/vertex.vert", "shaders/gradient.frag");
+	Shader organismeShader("shaders/organismeShader.vert", "shaders/organismeShader.frag");
 
 //----- Trekanter
 	//Tegn kun outline
@@ -42,11 +43,18 @@ int main(int argc, char* argv[])
 
 	std::cout << defaultCelle.pEgenskaper() << std::endl;
 	
-	for (int i = 0; i < 10; i++){
 
-		Organisme randomOrg("random");
-		std::cout << randomOrg.pEgenskaper() << std::endl;
+	std::vector<Organisme*> orgVec;
+
+	for (int i = 0; i < 100; i++){
+
+		Organisme* randOrgPoint = new Organisme("random");
+		std::cout << randOrgPoint->pEgenskaper() << std::endl;
+		orgVec.push_back(randOrgPoint);
 	};
+
+	std::cout << randomHex(6) << std::endl;
+
 
 	//RENDER LOOP
 	while(!glfwWindowShouldClose(window))
@@ -58,6 +66,11 @@ int main(int argc, char* argv[])
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
+		organismeShader.use();
+
+		tegnOrganismer(orgVec, &organismeShader);
+		glPointSize(20.0f);
+		glDrawArrays(GL_POINTS, 0, 100);
 
 		//BUFFERS OG VISNING
 		glfwSwapBuffers(window);

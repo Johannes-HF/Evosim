@@ -1,4 +1,6 @@
 #include <random>
+#include <iostream>
+#include <sstream>
 
 
 int randomInt(int lav, int hoy){
@@ -37,4 +39,28 @@ float normalDist(float mu, float sigma){
 	std::normal_distribution<float> dist(mu, sigma);
 
 	return dist(gen);
+}
+
+std::string randomHex(int antallSiffer){
+
+	std::stringstream hexTall;
+
+	for (int i = 0; i < antallSiffer; i++){
+
+		int tall = randomInt(0, 15);
+		if (tall > 9){
+
+			hexTall << char('A' - 10 + tall);
+		}
+		else{
+			hexTall << std::to_string(tall);
+		}
+	}
+	return hexTall.str();
+	
+}
+
+int hexTilInt(const std::string hex){
+
+	return std::stoi(hex, nullptr, 16);
 }

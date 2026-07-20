@@ -7,7 +7,7 @@
 
 class Organisme{
 	//gen-strengen som forteller hvilke sensorer som kobles med hvilke vekter og output 
-	int genotype; 
+	std::string genotype; 
 	bool kjonn; //pikk eller pung (livmor)
 	std::array<float, ANTALL_VEKTER> vekter; //vekter, verdi mellom -1, 1 
 	//Posisjonen inngår ikke i sensorer, da det er urealistisk at organismen vet sin absolutte posisjon
@@ -22,10 +22,11 @@ class Organisme{
 	Organisme(std::string conf = "");
 
 	std::vector<float> rEgenskaper() const;
+	std::array<float, 2> getPos() const;
 	void oppdaterEgenskaper(std::vector<float> nyeEgenskaper);
 	void tilfeldigEgenskaper();
 
-	int pGener() const;
+	std::string pGener() const;
 	std::string pVekter() const;
 	std::string pEgenskaper() const;
 	std::string pSensorer() const;
@@ -137,3 +138,4 @@ inline const std::map<Organisme::Handlinger, std::string> HandlingMap = {
 // UTILS
 //
 int st(Organisme::Egenskaper);
+
